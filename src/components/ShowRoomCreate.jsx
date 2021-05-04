@@ -31,7 +31,7 @@ export const ShowRoomCreate = ({state, dispatch}) => {
         <div className="row justify-content-center">
             <div className=" col-4 form-group">
                 <label htmlFor="name">Имя официанта</label>
-                <input type="text" className="form-control mt-1" id="name" placeholder="Автосалон Toyota"
+                <input type="text" className="form-control mt-1" id="name" placeholder="Имя официантаa"
                        onChange={e => {
                            setFormState({...formState, customer_name: e.target.value})
                        }} value={formState.customer_name}/>
@@ -40,7 +40,7 @@ export const ShowRoomCreate = ({state, dispatch}) => {
         <div className="row justify-content-center">
             <div className=" col-4 form-group">
                 <label htmlFor="name">Фамилия официанта</label>
-                <input type="text" className="form-control mt-1" id="name" placeholder="Автосалон Toyota"
+                <input type="text" className="form-control mt-1" id="name" placeholder="Фамилия официанта"
                        onChange={e => {
                            setFormState({...formState, customer_surname: e.target.value})
                        }} value={formState.customer_surname}/>
@@ -49,7 +49,7 @@ export const ShowRoomCreate = ({state, dispatch}) => {
         <div className="row justify-content-center">
             <div className=" col-4 form-group">
                 <label htmlFor="name">Имя клиента</label>
-                <input type="text" className="form-control mt-1" id="name" placeholder="Автосалон Toyota"
+                <input type="text" className="form-control mt-1" id="name" placeholder="Имя клиента"
                        onChange={e => {
                            setFormState({...formState, waiter_name: e.target.value})
                        }} value={formState.waiter_name}/>
@@ -58,7 +58,7 @@ export const ShowRoomCreate = ({state, dispatch}) => {
         <div className="row justify-content-center">
             <div className=" col-4 form-group">
                 <label htmlFor="name">Фамилия клиента</label>
-                <input type="text" className="form-control mt-1" id="name" placeholder="Автосалон Toyota"
+                <input type="text" className="form-control mt-1" id="name" placeholder="Фамилия клиента"
                        onChange={e => {
                            setFormState({...formState, waiter_surname: e.target.value})
                        }} value={formState.waiter_surname}/>
@@ -67,7 +67,7 @@ export const ShowRoomCreate = ({state, dispatch}) => {
         <div className="row mt-2 justify-content-center">
             <div className=" col-4 form-group">
                 <label htmlFor="address">Номер стола</label>
-                <input type="text" className="form-control mt-1" id="address" placeholder="г.Москва, ул. Тверская 2"
+                <input type="text" className="form-control mt-1" id="address" placeholder="Номер стола"
                        value={formState.table_id}
                        onChange={e => {
                            setFormState({...formState, table_id: e.target.value})
@@ -78,7 +78,7 @@ export const ShowRoomCreate = ({state, dispatch}) => {
         <div className="row mt-2 justify-content-center">
             <div className=" col-4 form-group">
                 <label>Итого</label>
-                <input type="text" className="form-control mt-1" placeholder="+79245415441"
+                <input type="text" className="form-control mt-1" placeholder="12000"
                        value={formState.total}
                        onChange={e => {
                            setFormState({...formState, total: e.target.value})
